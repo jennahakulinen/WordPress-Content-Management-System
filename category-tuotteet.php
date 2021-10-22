@@ -1,11 +1,10 @@
 <?php get_header(); ?>
     <div class="content-row">
-        <?php get_sidebar(); ?>
         <main>
             <h2><?php echo get_queried_object()->name; ?></h2>
             <p><?php echo get_queried_object()->description; ?></p>
 
-            <h3 class="punainen">Kategoriat</h3>
+            <h3 class="vaaleanpunainen">Kategoriat</h3>
             <?php
                 $id = get_queried_object()->term_id;
                 $tyyppi = get_queried_object()->taxonomy;

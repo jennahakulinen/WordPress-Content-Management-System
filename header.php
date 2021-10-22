@@ -16,11 +16,12 @@
 
 <body <?php body_class(); ?>>
 <div class="main-container">
-    <header class="tummanpunainen main-header">
-        <div class="oranssi tunnus"><a href="<?php echo get_home_url(); ?>">Karkkikauppa Oy</a></div>
+    <header class="vaaleanpunainen main-header">
+        <div class="tunnus"><a href="<?php echo get_home_url(); ?>">Karkkikauppa Oy</a></div>
         <div class="search-block">
-        <?php get_search_form(); ?>
+            <?php get_search_form(); ?>
         </div>
+        <div class="nav-container"><?php get_sidebar(); ?></div>
     </header>
     <div class="banner">
         <img src="<?php header_image();?>" height="<?php echo get_custom_header()->height;?>" width="<?php echo get_custom_header()->width;?>" alt="Banneri">

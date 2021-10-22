@@ -1,6 +1,5 @@
  <?php get_header(); ?>
     <div class="content-row">
-        <?php get_sidebar(); ?>
         <main>
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) :  ?>
@@ -12,7 +11,7 @@
                 <?php endwhile; ?>
             <?php endif; ?>
 
-            <h3 class="punainen">Artikkelit</h3>
+            <h3 class="vaaleanpunainen">Tuotteet</h3>
             <?php
             $uudet_artikkelit = wp_get_recent_posts(array('numberposts' => '5'));
             foreach ($uudet_artikkelit as $artikkeli) :
@@ -26,6 +25,6 @@
                 </article>
             <?php endforeach; ?>
         </main>
-    </div>
+        </div>
 
     <?php get_footer(); ?>
